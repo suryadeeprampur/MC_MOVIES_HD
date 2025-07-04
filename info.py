@@ -13,21 +13,21 @@ def is_enabled(value, default):
 #---------------------------------------------------------------
 #---------------------------------------------------------------         ,
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '27761567'))
-API_HASH = environ.get('API_HASH', '9b7eba55db1f2ea32584cb981a1cd9d5')
-BOT_TOKEN = environ.get('BOT_TOKEN', '7872783969:AAFd4Z86R0PXua9dxV8epeYdsJpEbT_d4Qc')
+API_ID = int(environ.get('API_ID', ''))
+API_HASH = environ.get('API_HASH', '')
+BOT_TOKEN = environ.get('BOT_TOKEN', '')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5446981726').split()]
-USERNAME = environ.get('USERNAME', "@zishananis_official") # ADMIN USERNAME
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ' -1002340773096'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/filmsexpert_1')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', ' -1002445219066').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+USERNAME = environ.get('USERNAME', "") # ADMIN USERNAME
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/MC_MOVIES_PVT')
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://zishananis3:zishananis3@zishan.lnmwskt.mongodb.net/?retryWrites=true&w=majority&appName=zishan")
-DATABASE_NAME = environ.get('DATABASE_NAME', "zishan")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_NAME = environ.get('DATABASE_NAME', "")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', '')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #----------- There will be channel id add in all these ---------
@@ -35,23 +35,23 @@ LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '0'))
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL','0'))
 DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','0'))
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '0'))
-auth_channel = environ.get('AUTH_CHANNEL', '-1002417289709')
+auth_channel = environ.get('AUTH_CHANNEL', '')
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '0'))
-request_channel = environ.get('REQUEST_CHANNEL', '-1002453978699')
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002453978699'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/filmsexpert2') #Support group link ( make sure bot is admin )
+request_channel = environ.get('REQUEST_CHANNEL', '')
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', ''))
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/MC_MOVIES_PVT') #Support group link ( make sure bot is admin )
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 IS_VERIFY = is_enabled('IS_VERIFY', False)
 #---------------------------------------------------------------
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/Stark_Network07")
-VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
-SHORTENER_API = environ.get("SHORTENER_API", "95be317f4883bfcc7d5572e8f2ede838ab2a9ba8")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", 'omegalinks.in')
-SHORTENER_API2 = environ.get("SHORTENER_API2", "95be317f4883bfcc7d5572e8f2ede838ab2a9ba8")
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", 'omegalinks.in')
-SHORTENER_API3 = environ.get("SHORTENER_API3", "95be317f4883bfcc7d5572e8f2ede838ab2a9ba8")
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", 'omegalinks.in')
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/RDX_PVT_LTD")
+VERIFY_IMG = environ.get("VERIFY_IMG", "")
+SHORTENER_API = environ.get("SHORTENER_API", "")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", '')
+SHORTENER_API2 = environ.get("SHORTENER_API2", "")
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", '')
+SHORTENER_API3 = environ.get("SHORTENER_API3", "")
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", '')
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "14400"))
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "14400"))
 #---------------------------------------------------------------
@@ -68,11 +68,11 @@ REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-START_IMG = (environ.get('START_IMG', 'https://graph.org/file/6b3d2e2b0554abf816174-8254b0f8e1878b7f14.jpg')).split()
-FORCESUB_IMG = environ.get('FORCESUB_IMG', 'https://i.ibb.co/ZNC1Hnb/ad3f2c88a8f2.jpg')
-REFER_PICS = (environ.get("REFER_PICS", "https://envs.sh/PSI.jpg")).split() 
-PAYPICS = (environ.get('PAYPICS', 'https://graph.org/file/84b250fbdf2cf62272057-a03b878fd6125bcf4c.jpg')).split()
-SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/6ba05f3a66646e9d78c37-0cee0a01b9d84aa1af.jpg'))
+START_IMG = (environ.get('START_IMG', '')).split()
+FORCESUB_IMG = environ.get('FORCESUB_IMG', '')
+REFER_PICS = (environ.get("REFER_PICS", "")).split() 
+PAYPICS = (environ.get('PAYPICS', '')).split()
+SUBSCRIPTION = (environ.get('SUBSCRIPTION', ''))
 REACTIONS = ["👀", "😱", "🔥", "😍", "🎉", "🥰", "😇", "⚡"]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
@@ -105,7 +105,7 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("FQDN", "sharp-april-zishananis-cb465703.koyeb.app")
+URL = environ.get("FQDN", "")
 
 #---------------------------------------------------------------
 #---------------------------------------------------------------
