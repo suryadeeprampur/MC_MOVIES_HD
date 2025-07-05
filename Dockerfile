@@ -30,6 +30,6 @@ RUN pip install --upgrade pip \
     && pip install -r requirements.txt
 
 EXPOSE 8080
-CMD ["python", "-m", "MC_MOVIES_HD"]
+CMD ["python", "MC_MOVIES_HD/__main__.py"]
 #CMD ["python", "main.py"]
 
