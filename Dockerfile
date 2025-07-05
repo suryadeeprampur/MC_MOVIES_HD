@@ -31,5 +31,6 @@ RUN pip install --upgrade pip \
 
 EXPOSE 8080
 
-CMD ["python", "main.py"]
+#CMD ["python", "main.py"]
+CMD ["python", "__main__.py"]
 
