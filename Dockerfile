@@ -7,13 +7,20 @@
 #CMD ["python", "bot.py"]
 
 
-
-
-
 FROM python:3.12-slim
 
-# Install git and any other dependencies
-RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    git \
+    ffmpeg \
+    gcc \
+    python3-dev \
+    libjpeg-dev \
+    zlib1g-dev \
+    libpng-dev \
+    libffi-dev \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
@@ -24,4 +31,5 @@ RUN pip install --upgrade pip \
 
 EXPOSE 8080
 
-CMD ["python", "main.py"]  # Change this line if your bot's entry point is different
+CMD ["python", "main.py"]
+
